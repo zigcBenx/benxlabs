@@ -22,6 +22,16 @@ import {
   Calendar,
   Eye,
   Brain,
+  Github,
+  GitBranch,
+  CreditCard,
+  DollarSign,
+  Mail,
+  HardDrive,
+  Send,
+  Zap,
+  BookOpen,
+  ShoppingBag,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -39,6 +49,7 @@ export default function HomePage() {
 
   const heroScale = useTransform(scrollYProgress, [0, 1], [1, 0.9])
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0])
+  const mobileCardOpacity = useTransform(scrollYProgress, [0, 0.9], [1, 0])
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [cursorVariant, setCursorVariant] = useState("default")
@@ -148,6 +159,8 @@ export default function HomePage() {
     { name: "Ehrana", logo: "/images/logos/ehrana.avif" },
     { name: "CosyLab", logo: "/images/logos/cosylab.png" },
     { name: "SmartNinja", logo: "/images/logos/smartninja.png" },
+    { name: "Hoodburger", logo: "/images/logos/hoodburger.png" },
+    { name: "Glovo", logo: "/images/logos/glovo.png" },
   ]
 
   const youtubeVideos = [
@@ -385,9 +398,8 @@ export default function HomePage() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <motion.section
+      <section
         ref={heroRef}
-        style={{ scale: heroScale, opacity: heroOpacity }}
         className="relative min-h-screen flex items-center pt-20 overflow-hidden"
       >
         <div className="relative z-10 container mx-auto px-6 lg:px-8">
@@ -397,6 +409,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               className="space-y-8"
+              style={{ scale: heroScale, opacity: heroOpacity }}
             >
               <Badge
                 variant="secondary"
@@ -466,6 +479,7 @@ export default function HomePage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
+              style={isMobile ? { opacity: mobileCardOpacity } : { scale: heroScale, opacity: heroOpacity }}
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-3xl blur-3xl opacity-30" />
@@ -521,7 +535,7 @@ export default function HomePage() {
             </motion.div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Clients Section */}
       <section className="relative z-10 py-20 border-t border-slate-800/50">
@@ -733,6 +747,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Integrations Section */}
+      <section className="relative z-10 py-20">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 mb-4">
+              Integrations
+            </Badge>
+            <h2 className="text-3xl font-bold mb-6">Platforms I've Integrated With</h2>
+            <p className="text-slate-400 text-lg mb-12">
+              Experience with major platforms and services for seamless integrations and API connectivity.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {[
+                { name: "GitHub", color: "text-gray-400", icon: Github },
+                { name: "GitLab", color: "text-orange-400", icon: GitBranch },
+                { name: "Stripe", color: "text-purple-400", icon: CreditCard },
+                { name: "Revolut", color: "text-blue-400", icon: DollarSign },
+                { name: "Google Mail", color: "text-red-400", icon: Mail },
+                { name: "Google Drive", color: "text-yellow-400", icon: HardDrive },
+                { name: "Brevo", color: "text-blue-500", icon: Mail },
+                { name: "Active Campaign", color: "text-green-400", icon: Zap },
+                { name: "SendGrid", color: "text-blue-600", icon: Send },
+                { name: "Wolt", color: "text-cyan-400", icon: ShoppingBag },
+              ].map((integration, index) => (
+                <motion.div
+                  key={integration.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-6 hover:border-emerald-500/50 transition-all duration-300 group"
+                  onMouseEnter={enterButton}
+                  onMouseLeave={leaveButton}
+                >
+                  <div className={`${integration.color} mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center`}>
+                    <integration.icon className="h-8 w-8" />
+                  </div>
+                  <div className="text-sm font-medium text-slate-300">{integration.name}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* YouTube Content Section */}
       <section id="content" className="relative z-10 py-20 bg-slate-900/30">
         <div className="container mx-auto px-6 lg:px-8">
@@ -814,6 +874,60 @@ export default function HomePage() {
             >
               <Youtube className="mr-2 h-4 w-4" /> Subscribe to Channel
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Books Section */}
+      <section className="relative z-10 py-20 bg-slate-900/30">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 mb-4">
+              Reading List
+            </Badge>
+            <h2 className="text-3xl font-bold mb-6">Last 10 Books I Read</h2>
+            <p className="text-slate-400 text-lg mb-12">
+              Continuous learning through books that shape my perspective on business, development, and productivity.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {[
+                { title: "Hooked", cover: "/images/books/hooked.jpg" },
+                { title: "Clean Code", cover: "/images/books/cleancode.jpg" },
+                { title: "Platform Revolution", cover: "/images/books/platformrevolution.jpg" },
+                { title: "Contagious", cover: "/images/books/Contagious.jpg" },
+                { title: "Sprint", cover: "/images/books/sprint.jpg" },
+                { title: "Traction", cover: "/images/books/traction.jpg" },
+                { title: "How to Win Friends and Influence People", cover: "/images/books/howtowinfriends.jpg" },
+                { title: "Traffic Secrets", cover: "/images/books/trafficsecrets.jpg" },
+                { title: "Don't Make Me Think", cover: "/images/books/dontmakemethink.jpg" },
+                { title: "Deep Work", cover: "/images/books/deepwork.jpg" },
+              ].map((book, index) => (
+                <motion.div
+                  key={book.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-4 hover:border-emerald-500/50 transition-all duration-300 group"
+                  onMouseEnter={enterButton}
+                  onMouseLeave={leaveButton}
+                >
+                  <div className="mb-3 group-hover:scale-105 transition-transform duration-300 flex justify-center">
+                    <div className="relative w-16 h-20 rounded overflow-hidden shadow-lg">
+                      <Image
+                        src={book.cover}
+                        alt={book.title}
+                        fill
+                        className="object-cover"
+                        sizes="64px"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-xs font-medium text-slate-300 text-center leading-tight">{book.title}</div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
