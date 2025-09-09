@@ -32,11 +32,13 @@ import {
   Zap,
   BookOpen,
   ShoppingBag,
+  Clock,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { useMobile } from "@/hooks/use-mobile"
 import { ContactForm } from "@/components/contact-form"
+import { fetchSubstackPosts, type BlogPost } from "@/lib/rss"
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -60,6 +62,7 @@ export default function HomePage() {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number; speed: number }>>(
     [],
   )
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([])
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -93,6 +96,20 @@ export default function HomePage() {
 
     const interval = setInterval(animateParticles, 50)
     return () => clearInterval(interval)
+  }, [])
+
+  // Fetch blog posts from Substack RSS
+  useEffect(() => {
+    const loadBlogPosts = async () => {
+      try {
+        const posts = await fetchSubstackPosts()
+        setBlogPosts(posts)
+      } catch (error) {
+        console.error('Failed to load blog posts:', error)
+      }
+    }
+    
+    loadBlogPosts()
   }, [])
 
   const variants = {
@@ -873,6 +890,98 @@ export default function HomePage() {
               onMouseLeave={leaveButton}
             >
               <Youtube className="mr-2 h-4 w-4" /> Subscribe to Channel
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Posts Section */}
+      <section className="relative z-10 py-20">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 mb-4">
+              Latest Blog Posts
+            </Badge>
+            <h2 className="text-4xl font-bold mb-6">From My Substack</h2>
+            <p className="text-slate-400 text-lg">
+              Technical articles and insights for developers, covering modern web development, best practices, and productivity tips.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.length > 0 ? (
+              blogPosts.map((post, index) => (
+                <motion.div
+                  key={post.link}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
+                  onMouseEnter={enterButton}
+                  onMouseLeave={leaveButton}
+                >
+                  <Card className="bg-slate-800/50 border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 h-full">
+                    <CardContent className="p-8">
+                      <div className="flex items-center gap-2 mb-4">
+                        <BookOpen className="h-4 w-4 text-emerald-400" />
+                        <span className="text-sm text-slate-400">{post.publishedDate}</span>
+                        <span className="text-slate-600">•</span>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3 text-slate-400" />
+                          <span className="text-sm text-slate-400">{post.readTime}</span>
+                        </div>
+                      </div>
+                      <h3 className="font-semibold mb-3 line-clamp-2">{post.title}</h3>
+                      <p className="text-slate-400 leading-relaxed mb-6 line-clamp-3">{post.description}</p>
+                      <Link
+                        href={post.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="w-full border-slate-700 hover:bg-slate-800 bg-transparent"
+                        >
+                          Read Article <ExternalLink className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))
+            ) : (
+              // Loading skeleton
+              Array.from({ length: 3 }).map((_, index) => (
+                <div
+                  key={index}
+                  className="bg-slate-800/50 border border-slate-700/50 rounded-lg p-8 animate-pulse"
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-4 h-4 bg-slate-700 rounded"></div>
+                    <div className="w-20 h-3 bg-slate-700 rounded"></div>
+                    <div className="w-1 h-1 bg-slate-600 rounded-full"></div>
+                    <div className="w-16 h-3 bg-slate-700 rounded"></div>
+                  </div>
+                  <div className="w-full h-6 bg-slate-700 rounded mb-3"></div>
+                  <div className="w-3/4 h-6 bg-slate-700 rounded mb-6"></div>
+                  <div className="w-full h-4 bg-slate-700 rounded mb-2"></div>
+                  <div className="w-2/3 h-4 bg-slate-700 rounded mb-6"></div>
+                  <div className="w-full h-8 bg-slate-700 rounded"></div>
+                </div>
+              ))
+            )}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-900 font-semibold"
+              onClick={() => window.open("https://benxlabs.substack.com/", "_blank")}
+              onMouseEnter={enterButton}
+              onMouseLeave={leaveButton}
+            >
+              <BookOpen className="mr-2 h-4 w-4" /> Read More on Substack
             </Button>
           </div>
         </div>
