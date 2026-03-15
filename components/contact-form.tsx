@@ -37,25 +37,40 @@ export function ContactForm({ isOpen, onClose, preselectedProject }: ContactForm
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-
-    // Reset form after 2 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        project: "",
-        budget: "",
-        message: "",
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       })
-      onClose()
-    }, 2000)
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setIsSubmitted(true)
+
+      // Reset form after 2 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          project: "",
+          budget: "",
+          message: "",
+        })
+        onClose()
+      }, 2000)
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("Failed to send message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
