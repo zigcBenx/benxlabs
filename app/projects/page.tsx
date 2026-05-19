@@ -267,6 +267,14 @@ export default function ProjectsPage() {
                 Content
               </Link>
               <Link
+                href="/appearances"
+                className="hover:text-emerald-400 transition-colors"
+                onMouseEnter={enterButton}
+                onMouseLeave={leaveButton}
+              >
+                Appearances
+              </Link>
+              <Link
                 href="/projects"
                 className="text-emerald-400 font-medium"
                 onMouseEnter={enterButton}
@@ -330,6 +338,13 @@ export default function ProjectsPage() {
                 onClick={() => setMenuOpen(false)}
               >
                 Content
+              </Link>
+              <Link
+                href="/appearances"
+                className="hover:text-emerald-400 transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Appearances
               </Link>
               <Link href="/projects" className="text-emerald-400 font-medium" onClick={() => setMenuOpen(false)}>
                 Projects

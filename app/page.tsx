@@ -39,6 +39,7 @@ import Image from "next/image"
 import { useMobile } from "@/hooks/use-mobile"
 import { ContactForm } from "@/components/contact-form"
 import { fetchSubstackPosts, type BlogPost } from "@/lib/rss"
+import { featuredAppearances } from "@/lib/appearances"
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -178,6 +179,7 @@ export default function HomePage() {
     { name: "SmartNinja", logo: "/images/logos/smartninja.png" },
     { name: "Hoodburger", logo: "/images/logos/hoodburger.png" },
     { name: "Glovo", logo: "/images/logos/glovo.png" },
+    { name: "ParakeetAI", logo: "/images/logos/parakeetai.webp" },
   ]
 
   const youtubeVideos = [
@@ -321,6 +323,14 @@ export default function HomePage() {
                 Content
               </Link>
               <Link
+                href="#appearances"
+                className="hover:text-emerald-400 transition-colors"
+                onMouseEnter={enterButton}
+                onMouseLeave={leaveButton}
+              >
+                Appearances
+              </Link>
+              <Link
                 href="/projects"
                 className="hover:text-emerald-400 transition-colors"
                 onMouseEnter={enterButton}
@@ -384,6 +394,13 @@ export default function HomePage() {
                 onClick={() => setMenuOpen(false)}
               >
                 Content
+              </Link>
+              <Link
+                href="#appearances"
+                className="hover:text-emerald-400 transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Appearances
               </Link>
               <Link
                 href="/projects"
@@ -584,6 +601,107 @@ export default function HomePage() {
                 />
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Public Appearances Section */}
+      <section id="appearances" className="relative z-10 py-20">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <Badge variant="secondary" className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30 mb-4">
+              Public Appearances
+            </Badge>
+            <h2 className="text-4xl font-bold mb-6">Talks, Podcasts & Interviews</h2>
+            <p className="text-slate-400 text-lg">
+              Sharing knowledge and insights at conferences, on podcasts, and in interviews across the tech community.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredAppearances.map((appearance, index) => {
+              const typeConfig = {
+                talk: { label: "Talk", color: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30" },
+                podcast: { label: "Podcast", color: "bg-blue-500/20 text-blue-400 border-blue-500/30" },
+                interview: { label: "Interview", color: "bg-purple-500/20 text-purple-400 border-purple-500/30" },
+                panel: { label: "Panel", color: "bg-orange-500/20 text-orange-400 border-orange-500/30" },
+              }[appearance.type]
+
+              const actionLabel = appearance.type === "podcast" ? "Listen" : appearance.type === "interview" ? "Read" : "Watch"
+              const hasLink = appearance.link && appearance.link !== "#"
+              const hasLink2 = appearance.link2 && appearance.link2 !== "#"
+
+              return (
+                <motion.div
+                  key={appearance.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
+                  onMouseEnter={enterButton}
+                  onMouseLeave={leaveButton}
+                >
+                  <Card className="bg-slate-800/50 border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 h-full">
+                    <CardContent className="p-8 flex flex-col h-full">
+                      <div className="flex items-center gap-3 mb-4">
+                        <Badge variant="secondary" className={typeConfig.color}>
+                          {typeConfig.label}
+                        </Badge>
+                        <span className="text-sm text-slate-400 flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
+                          {appearance.date}
+                        </span>
+                      </div>
+                      <div className="text-xs text-slate-500 mb-3 uppercase tracking-wide font-medium">
+                        {appearance.host} · {appearance.location}
+                      </div>
+                      <h3 className="font-semibold text-lg mb-3 line-clamp-2 flex-1">{appearance.title}</h3>
+                      <p className="text-slate-400 leading-relaxed mb-6 line-clamp-3 text-sm">{appearance.description}</p>
+                      {(hasLink || hasLink2) && (
+                        <div className={`flex gap-2 ${hasLink2 ? "flex-col" : ""}`}>
+                          {hasLink && (
+                            <Link href={appearance.link} target="_blank" rel="noopener noreferrer" className="flex-1">
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                className="w-full border-slate-700 hover:bg-slate-800 bg-transparent"
+                              >
+                                {actionLabel} <ExternalLink className="ml-2 h-4 w-4" />
+                              </Button>
+                            </Link>
+                          )}
+                          {hasLink2 && (
+                            <Link href={appearance.link2!} target="_blank" rel="noopener noreferrer" className="flex-1">
+                              <Button
+                                variant="outline"
+                                size="sm"
+                                className="w-full border-slate-700 hover:bg-slate-800 bg-transparent"
+                              >
+                                {appearance.link2Label ?? "Part 2"} <ExternalLink className="ml-2 h-4 w-4" />
+                              </Button>
+                            </Link>
+                          )}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              )
+            })}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/appearances">
+              <Button
+                variant="outline"
+                className="border-emerald-500 text-emerald-400 hover:bg-emerald-500 hover:text-slate-900 bg-transparent"
+                onMouseEnter={enterButton}
+                onMouseLeave={leaveButton}
+              >
+                View All Appearances <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
