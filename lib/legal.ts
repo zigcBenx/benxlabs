@@ -280,3 +280,146 @@ We may update this policy. If we make significant changes, we will update the da
 
 Questions or requests: **ziga@benxlabs.com**.
 `
+
+export const HOOPCHAT_PRIVACY = `# Privacy Policy
+
+_Last updated July 20, 2026_
+
+This Privacy Policy explains what HoopChat collects, why, and the choices you have. We tried to keep it short and human.
+
+HoopChat is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
+
+## What we collect
+
+- **Account details:** when you sign in with Apple, we receive your name and email to create and secure your account. If you choose to hide your email, Apple gives us a private relay address instead. Before you sign in, we create a temporary anonymous account so setup works; it is merged into your real account when you sign in.
+- **Profile information:** the display name and, if you add one, the profile photo you set during setup or in Settings are stored in your account.
+- **Your chats and content:** the messages you send to the AI coach and the content you create in the app are stored in your account so your conversations and progress persist across sessions.
+- **Voice and audio:** if you use the voice features, your device microphone records your speech and we process that audio to convert it to text (speech-to-text) so the AI coach can respond, and we generate spoken audio replies (text-to-speech). We do not use your recordings to identify you, and audio is not retained beyond what is needed to provide these features.
+- **Purchases:** if you subscribe, Apple handles the payment and our subscriptions provider tells us whether your subscription is active and how many AI credits you have used. We never receive your full card details.
+- **Basic technical data:** like most apps, we log limited technical information (such as device type and error logs) to keep things running and diagnose problems.
+
+## How we use it
+
+To run and provide the app, including generating AI coaching responses and voice replies to your messages; to personalize your experience; to manage your subscription and AI credit allowance; to respond to support requests; and to keep the service safe and prevent abuse.
+
+## AI and voice features
+
+HoopChat uses third-party artificial intelligence services to power the coach. When you send a message, its contents are transmitted to our AI provider to generate a response. When you use voice, your audio is sent to our voice provider to transcribe your speech and to synthesize spoken replies.
+
+These providers process your input to return a result to us; they act as our processors under our agreements with them and do not use your content to build their own products. AI-generated responses can be inaccurate or incomplete — please do not rely on them as professional advice (see the Terms of Use).
+
+## Who we share it with
+
+We do not sell your personal information or share it for advertising. We share it only with the service providers that make the app work, and each receives only what it needs:
+
+- **Supabase** — hosts our accounts, database, and storage of your profile, chats, and content.
+- **OpenRouter**, and the AI model providers it routes your request to (including Anthropic) — process the messages you send to generate the coach's responses.
+- **ElevenLabs** — converts your recorded speech to text and generates the spoken audio replies.
+- **RevenueCat** — tracks your subscription status and credit usage.
+- **Apple** — handles Sign in with Apple and processes your subscription payments.
+
+We may also disclose information if required by law, or to protect the rights, safety, and security of our users and the service.
+
+## Where your data is stored
+
+We are based in the European Union. Some of the service providers above (including our AI and voice providers) operate servers in the United States and other countries, so your information may be transferred and processed outside the EEA. Where that happens, we rely on appropriate safeguards such as the providers' standard contractual clauses. By using the app, you understand your information may be transferred internationally.
+
+## How long we keep it
+
+We keep your account, chats, and content until you delete them. You can delete your account any time in Settings — this permanently removes your profile, chats, and content from our systems. Deleting the app alone does not delete your account.
+
+## Your choices and rights
+
+You can edit your profile and delete your account in Settings, and you can manage app permissions such as the microphone in your device settings at any time.
+
+Because we are based in the EU, the GDPR applies: you have the right to access, correct, delete, or export your data, to object to or restrict certain processing, and to withdraw consent. You also have the right to lodge a complaint with your local data protection authority (in Slovenia, the Information Commissioner / Informacijski pooblaščenec). To make a request, email us at **ziga@benxlabs.com**.
+
+## Children
+
+HoopChat is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
+
+## Security
+
+We use industry-standard measures such as encryption in transit and access controls to protect your data. No system is perfectly secure, but we work to keep your information safe.
+
+## Changes to this policy
+
+We may update this policy. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app.
+
+## Contact
+
+Questions or requests: **ziga@benxlabs.com**.
+`
+
+export const HOOPCHAT_TERMS = `# Terms of Use
+
+_Last updated July 20, 2026_
+
+These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using HoopChat. By using the app, you agree to them. We kept them as simple as we could.
+
+## Using the app
+
+We grant you a personal, non-transferable license to use HoopChat on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it.
+
+## Who can use it
+
+You must be at least 13 years old (or the age of digital consent where you live) to use HoopChat. You are responsible for activity under your account.
+
+## AI coach — no professional advice
+
+HoopChat provides an AI-powered basketball coach that generates responses automatically. These responses are for general informational and training-motivation purposes only. They can be inaccurate, incomplete, or not suited to your situation, and they are not a substitute for professional coaching, medical, health, or fitness advice.
+
+Physical training carries risk of injury. Consult a qualified professional (such as a doctor or certified coach) before starting any new exercise or training program, and stop and seek help if you feel unwell. You use the AI coach and follow its suggestions at your own risk.
+
+## Subscriptions and payments
+
+- HoopChat offers auto-renewing subscriptions that unlock the app's features and AI usage.
+- Payment is charged to your Apple ID account when you confirm the purchase.
+- Your subscription automatically renews unless you cancel at least 24 hours before the end of the current period, and your account is charged for renewal within that window.
+- You can manage or cancel your subscription in your Apple ID account settings. Deleting the app does not cancel your subscription.
+- Prices are shown in the app before you buy. Except where required by law, payments are non-refundable; refunds are handled by Apple under its policies.
+
+## Your content
+
+You keep ownership of the content you submit, including your messages to the AI coach ("Your Content"). You give us the limited permission needed to process and store Your Content — including sending it to our AI and voice providers — to provide the service and to show it back to you.
+
+You are responsible for what you submit, and you confirm you have the right to submit it.
+
+## Acceptable use
+
+You agree not to use the app, or its AI features, to create or share content that is illegal, sexually explicit, violent or graphic, hateful, harassing, or that infringes others' rights, and not to attempt to misuse, overload, or circumvent the AI or the service.
+
+We may remove content and suspend or terminate accounts that break these rules.
+
+## Our intellectual property
+
+The app, its design, and its underlying technology belong to **BENXLABS, Žiga Benko s.p.** These Terms do not give you rights to our brand or software beyond using the app.
+
+## Termination
+
+You can stop using the app at any time and delete your account in Settings. We may suspend or end your access if you break these Terms or misuse the service.
+
+## Disclaimers
+
+The app is provided "as is" and "as available", without warranties of any kind. We do not guarantee it will always be available, error-free, or that AI responses will be accurate.
+
+## Limitation of liability
+
+To the fullest extent allowed by law, **BENXLABS, Žiga Benko s.p.** will not be liable for indirect or consequential damages arising from your use of the app. Where liability cannot be excluded, it is limited to the amount you paid us in the 12 months before the claim. Nothing in these Terms limits liability that cannot be limited under applicable law, including your mandatory rights as a consumer.
+
+## App Store
+
+You download the app through the Apple App Store, and Apple's terms also apply. Apple is not responsible for the app or its content and is not a party to these Terms, except that it may enforce them as a third-party beneficiary.
+
+## Changes to these Terms
+
+We may update these Terms. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app. Continuing to use the app means you accept the updated Terms.
+
+## Governing law
+
+These Terms are governed by the laws of Slovenia, without regard to its conflict-of-laws rules, and the courts of Ljubljana, Slovenia have jurisdiction over any disputes. If you are a consumer, this does not deprive you of the protection of mandatory laws of your country of residence.
+
+## Contact
+
+Questions about these Terms: **ziga@benxlabs.com**.
+`
