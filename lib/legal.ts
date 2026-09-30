@@ -423,3 +423,139 @@ These Terms are governed by the laws of Slovenia, without regard to its conflict
 
 Questions about these Terms: **ziga@benxlabs.com**.
 `
+
+export const HANDSTANDDUEL_PRIVACY = `# Privacy Policy
+
+_Last updated September 30, 2026_
+
+This Privacy Policy explains what HandStandDuel collects, why, and the choices you have. We tried to keep it short and human.
+
+HandStandDuel is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
+
+## What we collect
+
+- **Account:** you can use HandStandDuel without signing up. When you start, we create an anonymous account so your duels work across sessions. It is identified only by a random ID — no email or password.
+- **Display name:** the name you choose before your first duel. It is shown to the friends you duel.
+- **Camera — processed on your device:** the app uses your camera to detect your body pose and time your handstand. This analysis runs entirely on your phone; the live camera feed is never uploaded or stored by us.
+- **Hold photos:** during a hold, the app takes one still photo of you. For regular holds it stays on your device. For **duels**, that photo is uploaded together with your hold time and form score, and shown to the friend you are duelling — only after they have completed their own hold.
+- **Duel results:** your hold times, form scores, and which duels you won or lost.
+- **Hold history on your device:** your personal best, streak, and statistics are stored only on your phone.
+- **Reports:** if you report a duel, we store the report (which duel, the reason, and your account ID) so we can review it.
+- **Feature interest:** if you tap on a feature marked "coming soon", we record that tap to learn which features to build next.
+- **Basic technical data:** like most apps, we log limited technical information (such as device type and error logs) to keep things running and diagnose problems.
+
+## How we use it
+
+To run the app: timing and scoring your holds, running duels between you and your friends, showing results, reviewing reports, keeping the service safe and preventing abuse, and deciding what to build next. We do not use your data for advertising.
+
+## Who we share it with
+
+We do not sell your personal information or share it for advertising. We share it only with:
+
+- **The friends you duel** — your display name, hold time, form score, and duel photo, once they have completed their hold.
+- **Supabase** — hosts our accounts, database, and storage of duel photos.
+- **Apple** — distributes the app through the App Store.
+
+We may also disclose information if required by law, or to protect the rights, safety, and security of our users and the service.
+
+## Where your data is stored
+
+We are based in the European Union, and our database is hosted in the EU. Some service providers may process data in other countries; where that happens, we rely on appropriate safeguards such as standard contractual clauses.
+
+## How long we keep it
+
+Duel challenges that nobody accepts expire after 24 hours. We keep your account, duels, and duel photos until you delete your account. You can delete your account any time in the app under **Me → Delete account** — this permanently removes your profile, your duels and their photos, and the hold history stored on your phone. Deleting the app alone does not delete your account.
+
+## Your choices and rights
+
+You can change your display name and delete your account in the app, and you can turn off camera access in your device settings at any time (the app needs the camera to time holds).
+
+Because we are based in the EU, the GDPR applies: you have the right to access, correct, delete, or export your data, to object to or restrict certain processing, and to withdraw consent. You also have the right to lodge a complaint with your local data protection authority (in Slovenia, the Information Commissioner / Informacijski pooblaščenec). To make a request, email us at **ziga@benxlabs.com**.
+
+## Children
+
+HandStandDuel is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
+
+## Security
+
+We use industry-standard measures such as encryption in transit and access controls to protect your data. Duel photos are stored privately and are only shared through short-lived links with the players in that duel. No system is perfectly secure, but we work to keep your information safe.
+
+## Changes to this policy
+
+We may update this policy. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app.
+
+## Contact
+
+Questions or requests: **ziga@benxlabs.com**.
+`
+
+export const HANDSTANDDUEL_TERMS = `# Terms of Use
+
+_Last updated September 30, 2026_
+
+These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using HandStandDuel. By using the app, you agree to them. We kept them as simple as we could.
+
+## Using the app
+
+We grant you a personal, non-transferable license to use HandStandDuel on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it. The app is free to use.
+
+## Who can use it
+
+You must be at least 13 years old (or the age of digital consent where you live) to use HandStandDuel. You are responsible for activity under your account.
+
+## Your safety comes first
+
+Handstands and other inverted exercises carry a real risk of injury, including falls and injuries to the head, neck, wrists, and shoulders. Only attempt what you can do safely, practise on a soft surface with enough space around you, warm up first, and stop immediately if you feel pain, dizziness, or discomfort. If you have any health condition — especially relating to your heart, blood pressure, eyes, spine, or joints — consult a doctor before attempting inversions.
+
+HandStandDuel times and scores your holds; it does not supervise you. Hold times and form scores are automatic estimates from your phone's camera and may be inaccurate. You exercise at your own risk.
+
+## Duels and fair play
+
+- Each player gets one attempt per duel. Timing and scoring are automatic and final.
+- Do not tamper with the app, the camera, or the results to gain an advantage.
+- Challenges that are not accepted within 24 hours expire.
+
+## Your content
+
+You keep ownership of the photos and other content you create in the app ("Your Content"). You give us the limited permission needed to store Your Content and show it to the friends you duel, in order to provide the service.
+
+You are responsible for what you share, and you confirm you have the right to share it.
+
+## Acceptable use
+
+You agree not to use the app to create or share content that is illegal, sexually explicit, violent or graphic, hateful, harassing, or that infringes others' rights, and not to attempt to misuse, overload, or circumvent the service.
+
+You can report a duel from its result screen. We review reports and may remove content and suspend or terminate accounts that break these rules.
+
+## Our intellectual property
+
+The app, its design, and its underlying technology belong to **BENXLABS, Žiga Benko s.p.** These Terms do not give you rights to our brand or software beyond using the app.
+
+## Termination
+
+You can stop using the app at any time and delete your account in the app. We may suspend or end your access if you break these Terms or misuse the service.
+
+## Disclaimers
+
+The app is provided "as is" and "as available", without warranties of any kind. We do not guarantee it will always be available, error-free, or that hold times and scores will be accurate.
+
+## Limitation of liability
+
+To the fullest extent allowed by law, **BENXLABS, Žiga Benko s.p.** will not be liable for indirect or consequential damages arising from your use of the app, including injuries sustained while exercising. Where liability cannot be excluded, it is limited to the amount you paid us in the 12 months before the claim. Nothing in these Terms limits liability that cannot be limited under applicable law, including your mandatory rights as a consumer.
+
+## App Store
+
+You download the app through the Apple App Store, and Apple's terms also apply. Apple is not responsible for the app or its content and is not a party to these Terms, except that it may enforce them as a third-party beneficiary.
+
+## Changes to these Terms
+
+We may update these Terms. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app. Continuing to use the app means you accept the updated Terms.
+
+## Governing law
+
+These Terms are governed by the laws of Slovenia, without regard to its conflict-of-laws rules, and the courts of Ljubljana, Slovenia have jurisdiction over any disputes. If you are a consumer, this does not deprive you of the protection of mandatory laws of your country of residence.
+
+## Contact
+
+Questions about these Terms: **ziga@benxlabs.com**.
+`
