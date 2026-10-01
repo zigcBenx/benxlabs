@@ -9,11 +9,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // HandStandDuel was renamed to XStand — keep old links (store listing, app builds) working.
+  // XStand (formerly HandStandDuel) moved to its own site — keep old links working.
   async redirects() {
+    const site = "https://www.xstand.si"
     return [
-      { source: "/handstandduel", destination: "/xstand", permanent: true },
-      { source: "/handstandduel/:path*", destination: "/xstand/:path*", permanent: true },
+      { source: "/:app(xstand|handstandduel)", destination: `${site}/support`, permanent: true },
+      { source: "/:app(xstand|handstandduel)/privacy", destination: `${site}/privacy`, permanent: true },
+      { source: "/:app(xstand|handstandduel)/terms", destination: `${site}/terms`, permanent: true },
     ]
   },
 }
