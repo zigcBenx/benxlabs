@@ -426,7 +426,7 @@ Questions about these Terms: **ziga@benxlabs.com**.
 
 export const XSTAND_PRIVACY = `# Privacy Policy
 
-_Last updated September 30, 2026_
+_Last updated October 1, 2026_
 
 This Privacy Policy explains what XStand collects, why, and the choices you have. We tried to keep it short and human.
 
@@ -464,7 +464,7 @@ We are based in the European Union, and our database is hosted in the EU. Some s
 
 ## How long we keep it
 
-Duel challenges that nobody accepts expire after 24 hours. We keep your account, duels, and duel photos until you delete your account. You can delete your account any time in the app under **Me → Delete account** — this permanently removes your profile, your duels and their photos, and the hold history stored on your phone. Deleting the app alone does not delete your account.
+We keep your account, duels (including challenges nobody has answered yet), and duel photos until you delete your account. You can delete your account any time in the app under **Me → Delete account** — this permanently removes your profile, your duels and their photos, and the hold history stored on your phone. Deleting the app alone does not delete your account.
 
 ## Your choices and rights
 
@@ -491,7 +491,7 @@ Questions or requests: **ziga@benxlabs.com**.
 
 export const XSTAND_TERMS = `# Terms of Use
 
-_Last updated September 30, 2026_
+_Last updated October 1, 2026_
 
 These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using XStand. By using the app, you agree to them. We kept them as simple as we could.
 
@@ -513,7 +513,7 @@ XStand times and scores your holds; it does not supervise you. Hold times and fo
 
 - Each player gets one attempt per duel. Timing and scoring are automatic and final.
 - Do not tamper with the app, the camera, or the results to gain an advantage.
-- Challenges that are not accepted within 24 hours expire.
+- A challenge stays open until someone answers it.
 
 ## Your content
 
