@@ -424,17 +424,17 @@ These Terms are governed by the laws of Slovenia, without regard to its conflict
 Questions about these Terms: **ziga@benxlabs.com**.
 `
 
-export const HANDSTANDDUEL_PRIVACY = `# Privacy Policy
+export const XSTAND_PRIVACY = `# Privacy Policy
 
 _Last updated September 30, 2026_
 
-This Privacy Policy explains what HandStandDuel collects, why, and the choices you have. We tried to keep it short and human.
+This Privacy Policy explains what XStand collects, why, and the choices you have. We tried to keep it short and human.
 
-HandStandDuel is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
+XStand is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
 
 ## What we collect
 
-- **Account:** you can use HandStandDuel without signing up. When you start, we create an anonymous account so your duels work across sessions. It is identified only by a random ID — no email or password.
+- **Account:** you can use XStand without signing up. When you start, we create an anonymous account so your duels work across sessions. It is identified only by a random ID — no email or password.
 - **Display name:** the name you choose before your first duel. It is shown to the friends you duel.
 - **Camera — processed on your device:** the app uses your camera to detect your body pose and time your handstand. This analysis runs entirely on your phone; the live camera feed is never uploaded or stored by us.
 - **Hold photos:** during a hold, the app takes one still photo of you. For regular holds it stays on your device. For **duels**, that photo is uploaded together with your hold time and form score, and shown to the friend you are duelling — only after they have completed their own hold.
@@ -474,7 +474,7 @@ Because we are based in the EU, the GDPR applies: you have the right to access, 
 
 ## Children
 
-HandStandDuel is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
+XStand is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
 
 ## Security
 
@@ -489,25 +489,25 @@ We may update this policy. If we make significant changes, we will update the da
 Questions or requests: **ziga@benxlabs.com**.
 `
 
-export const HANDSTANDDUEL_TERMS = `# Terms of Use
+export const XSTAND_TERMS = `# Terms of Use
 
 _Last updated September 30, 2026_
 
-These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using HandStandDuel. By using the app, you agree to them. We kept them as simple as we could.
+These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using XStand. By using the app, you agree to them. We kept them as simple as we could.
 
 ## Using the app
 
-We grant you a personal, non-transferable license to use HandStandDuel on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it. The app is free to use.
+We grant you a personal, non-transferable license to use XStand on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it. The app is free to use.
 
 ## Who can use it
 
-You must be at least 13 years old (or the age of digital consent where you live) to use HandStandDuel. You are responsible for activity under your account.
+You must be at least 13 years old (or the age of digital consent where you live) to use XStand. You are responsible for activity under your account.
 
 ## Your safety comes first
 
 Handstands and other inverted exercises carry a real risk of injury, including falls and injuries to the head, neck, wrists, and shoulders. Only attempt what you can do safely, practise on a soft surface with enough space around you, warm up first, and stop immediately if you feel pain, dizziness, or discomfort. If you have any health condition — especially relating to your heart, blood pressure, eyes, spine, or joints — consult a doctor before attempting inversions.
 
-HandStandDuel times and scores your holds; it does not supervise you. Hold times and form scores are automatic estimates from your phone's camera and may be inaccurate. You exercise at your own risk.
+XStand times and scores your holds; it does not supervise you. Hold times and form scores are automatic estimates from your phone's camera and may be inaccurate. You exercise at your own risk.
 
 ## Duels and fair play
 

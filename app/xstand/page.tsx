@@ -6,7 +6,7 @@ import { Send, CheckCircle } from "lucide-react"
 
 const SUPPORT_EMAIL = "ziga@benxlabs.com"
 
-export default function HandStandDuelSupportPage() {
+export default function XStandSupportPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle")
 
@@ -21,7 +21,7 @@ export default function HandStandDuelSupportPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, project: "HandStandDuel Support" }),
+        body: JSON.stringify({ ...form, project: "XStand Support" }),
       })
       if (!res.ok) throw new Error("Failed")
       setStatus("sent")
@@ -41,7 +41,7 @@ export default function HandStandDuelSupportPage() {
           ← BenxLabs
         </Link>
 
-        <h1 className="mb-2 text-3xl font-bold">HandStandDuel Support</h1>
+        <h1 className="mb-2 text-3xl font-bold">XStand Support</h1>
         <p className="mb-8 leading-relaxed text-slate-300">
           Have a question, found a bug, or want to report a problem with a duel? Send us a message and we&apos;ll
           get back to you. You can also email us directly at{" "}
@@ -138,10 +138,10 @@ export default function HandStandDuelSupportPage() {
         )}
 
         <div className="mt-10 flex gap-4 text-sm text-slate-500">
-          <Link href="/handstandduel/privacy" className="hover:text-slate-300">
+          <Link href="/xstand/privacy" className="hover:text-slate-300">
             Privacy Policy
           </Link>
-          <Link href="/handstandduel/terms" className="hover:text-slate-300">
+          <Link href="/xstand/terms" className="hover:text-slate-300">
             Terms of Use
           </Link>
         </div>
