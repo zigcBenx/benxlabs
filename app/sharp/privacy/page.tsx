@@ -3,8 +3,8 @@ import { LegalDoc } from "@/components/legal-doc"
 import { SHARP_PRIVACY } from "@/lib/legal"
 
 export const metadata: Metadata = {
-  title: "Sharp — Privacy Policy",
-  description: "Privacy Policy for the Sharp app.",
+  title: "SharpMaxx — Privacy Policy",
+  description: "Privacy Policy for the SharpMaxx app.",
 }
 
 export default function SharpPrivacyPage() {

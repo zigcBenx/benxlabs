@@ -428,13 +428,13 @@ export const SHARP_PRIVACY = `# Privacy Policy
 
 _Last updated October 6, 2026_
 
-This Privacy Policy explains what Sharp collects, why, and the choices you have. We tried to keep it short and human.
+This Privacy Policy explains what SharpMaxx collects, why, and the choices you have. We tried to keep it short and human.
 
-Sharp is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
+SharpMaxx is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
 
 ## What we collect
 
-- **Account:** you can use Sharp without signing up. When you start, we create an anonymous account identified only by a random ID — no name, email, or password.
+- **Account:** you can use SharpMaxx without signing up. When you start, we create an anonymous account identified only by a random ID — no name, email, or password.
 - **Outfit photos:** when you rate a fit, the photo you take or choose is resized on your phone and sent through our server to our AI providers to produce your rating (see "AI rating" below). We do not store your outfit photos on our servers.
 - **Your ratings:** your score, potential score, feedback, and the occasion you picked are returned to your phone and stored **only on your device**, together with a copy of the photo, so you can see your recent fits.
 - **Color palette:** the AI suggests which colors suit you (your "color season") based on the skin tone, hair, and colors visible in your photo. The result is stored only on your device. We do not use it to identify you or for anything other than color suggestions.
@@ -448,13 +448,13 @@ To run the app — rating your outfits, generating your feedback and color palet
 
 ## AI rating
 
-Sharp uses a third-party AI service to rate outfits, and the app asks for your permission before it sends your first photo. Each time you rate a fit, the photo and the occasion you chose are sent through our server to **OpenRouter**, which routes them to the AI model provider (currently **Anthropic**) to generate your rating.
+SharpMaxx uses a third-party AI service to rate outfits, and the app asks for your permission before it sends your first photo. Each time you rate a fit, the photo and the occasion you chose are sent through our server to **OpenRouter**, which routes them to the AI model provider (currently **Anthropic**) to generate your rating.
 
 These providers process your photo only to return the result to us; they act as our processors under our agreements with them and do not use your content to build their own products. Ratings and suggestions are generated automatically and are opinions about style, not facts — see the Terms of Use.
 
 ## Sharing
 
-Sharp never posts anything on your behalf. When you tap Share or Save, the share card is created on your phone and handed to your device's share sheet or photo library. What happens after that is up to you and the app you share to, under that app's own terms and privacy policy.
+SharpMaxx never posts anything on your behalf. When you tap Share or Save, the share card is created on your phone and handed to your device's share sheet or photo library. What happens after that is up to you and the app you share to, under that app's own terms and privacy policy.
 
 ## Who we share it with
 
@@ -496,7 +496,7 @@ Because we are based in the EU, the GDPR applies: you have the right to access, 
 
 ## Children
 
-Sharp is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
+SharpMaxx is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
 
 ## Security
 
@@ -515,23 +515,23 @@ export const SHARP_TERMS = `# Terms of Use
 
 _Last updated October 6, 2026_
 
-These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using Sharp. By using the app, you agree to them. We kept them as simple as we could.
+These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using SharpMaxx. By using the app, you agree to them. We kept them as simple as we could.
 
 ## Using the app
 
-We grant you a personal, non-transferable license to use Sharp on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it.
+We grant you a personal, non-transferable license to use SharpMaxx on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it.
 
 ## Who can use it
 
-You must be at least 13 years old (or the age of digital consent where you live) to use Sharp. You are responsible for activity under your account.
+You must be at least 13 years old (or the age of digital consent where you live) to use SharpMaxx. You are responsible for activity under your account.
 
 ## Ratings are opinions, not facts
 
-Sharp's scores, potential scores, suggestions, and color palettes are generated automatically by AI. They are opinions about style — subjective, sometimes inaccurate, and not professional advice. A score is about the outfit in one photo, not about you as a person. Use them for fun and inspiration, at your own discretion.
+SharpMaxx's scores, potential scores, suggestions, and color palettes are generated automatically by AI. They are opinions about style — subjective, sometimes inaccurate, and not professional advice. A score is about the outfit in one photo, not about you as a person. Use them for fun and inspiration, at your own discretion.
 
 ## Free checks and the one-time unlock
 
-- Sharp includes a limited number of free outfit checks. After that, you can buy a one-time unlock. It is **not a subscription** and never renews.
+- SharpMaxx includes a limited number of free outfit checks. After that, you can buy a one-time unlock. It is **not a subscription** and never renews.
 - Payment is charged to your Apple ID or Google Play account when you confirm the purchase. The unlock is tied to that store account and can be restored on a new device from Settings.
 - Prices are shown in the app before you buy. Except where required by law, payments are non-refundable; refunds are handled by Apple or Google under their policies.
 - To keep the service fast and fair for everyone, ratings are subject to reasonable daily limits, including with the unlock.

@@ -21,7 +21,7 @@ export default function SharpSupportPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, project: "Sharp Support" }),
+        body: JSON.stringify({ ...form, project: "SharpMaxx Support" }),
       })
       if (!res.ok) throw new Error("Failed")
       setStatus("sent")
@@ -41,7 +41,7 @@ export default function SharpSupportPage() {
           ← BenxLabs
         </Link>
 
-        <h1 className="mb-2 text-3xl font-bold">Sharp Support</h1>
+        <h1 className="mb-2 text-3xl font-bold">SharpMaxx Support</h1>
         <p className="mb-8 leading-relaxed text-slate-300">
           Have a question, found a bug, or need help restoring your unlock? Send us a message and we&apos;ll
           get back to you. You can also email us directly at{" "}
