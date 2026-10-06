@@ -423,3 +423,164 @@ These Terms are governed by the laws of Slovenia, without regard to its conflict
 
 Questions about these Terms: **ziga@benxlabs.com**.
 `
+
+export const SHARP_PRIVACY = `# Privacy Policy
+
+_Last updated October 6, 2026_
+
+This Privacy Policy explains what Sharp collects, why, and the choices you have. We tried to keep it short and human.
+
+Sharp is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in Ljubljana, Slovenia, who is the data controller for your information. If anything here is unclear, email us at **ziga@benxlabs.com**.
+
+## What we collect
+
+- **Account:** you can use Sharp without signing up. When you start, we create an anonymous account identified only by a random ID — no name, email, or password.
+- **Outfit photos:** when you rate a fit, the photo you take or choose is resized on your phone and sent through our server to our AI providers to produce your rating (see "AI rating" below). We do not store your outfit photos on our servers.
+- **Your ratings:** your score, potential score, feedback, and the occasion you picked are returned to your phone and stored **only on your device**, together with a copy of the photo, so you can see your recent fits.
+- **Color palette:** the AI suggests which colors suit you (your "color season") based on the skin tone, hair, and colors visible in your photo. The result is stored only on your device. We do not use it to identify you or for anything other than color suggestions.
+- **Usage counts:** for each rating, our server records your account ID, the time, and whether the rating succeeded. We use this to apply your free checks and a daily limit that prevents abuse. It contains no photos or results.
+- **Purchases:** if you buy the one-time unlock, Apple or Google handles the payment and our purchases provider tells us whether your account has the unlock. We never receive your card details.
+- **Usage analytics and crash reports:** we collect in-app events (for example, that a rating was completed or a share card was created), your device type and app version, and error reports. These are linked to a random device identifier, not to your name, and help us understand how the app is used and fix problems.
+
+## How we use it
+
+To run the app — rating your outfits, generating your feedback and color palette, applying free checks and fair-use limits, unlocking your purchase, and fixing problems — to respond to support requests, and to decide what to improve. We do not use your data for advertising.
+
+## AI rating
+
+Sharp uses a third-party AI service to rate outfits, and the app asks for your permission before it sends your first photo. Each time you rate a fit, the photo and the occasion you chose are sent through our server to **OpenRouter**, which routes them to the AI model provider (currently **Anthropic**) to generate your rating.
+
+These providers process your photo only to return the result to us; they act as our processors under our agreements with them and do not use your content to build their own products. Ratings and suggestions are generated automatically and are opinions about style, not facts — see the Terms of Use.
+
+## Sharing
+
+Sharp never posts anything on your behalf. When you tap Share or Save, the share card is created on your phone and handed to your device's share sheet or photo library. What happens after that is up to you and the app you share to, under that app's own terms and privacy policy.
+
+## Who we share it with
+
+We do not sell your personal information or share it for advertising. We share it only with the service providers that make the app work, and each receives only what it needs:
+
+- **Supabase** — hosts our accounts, database, and the server function that handles ratings.
+- **OpenRouter**, and the AI model provider it routes your request to (Anthropic) — process your outfit photo to generate your rating.
+- **RevenueCat** — tracks whether your account has the one-time unlock.
+- **PostHog** — usage analytics and crash reports.
+- **Apple and Google** — distribute the app and process payments.
+
+We may also disclose information if required by law, or to protect the rights, safety, and security of our users and the service.
+
+## Device permissions
+
+- **Camera** — to take the photo of your outfit.
+- **Photo picker** — to choose an existing photo. The app only receives the photo you pick.
+- **Add to Photos** — only to save a share card when you tap Save. The app does not read your photo library.
+
+You can change these in your device settings at any time.
+
+## Where your data is stored
+
+We are based in the European Union, and our database is hosted in the EU. Our AI providers and some other service providers operate servers in the United States and other countries, so your photo and other information may be processed outside the EEA. Where that happens, we rely on appropriate safeguards such as standard contractual clauses.
+
+## How long we keep it
+
+- **Outfit photos** are not stored on our servers; we pass them to our AI providers and keep nothing once your rating is returned.
+- **Your fit history, photos, and color palette** stay on your phone until you delete them.
+- **Usage counts** are kept with your account until you delete it.
+
+You can delete your account any time in **Settings → Delete account** — this permanently removes your account and usage records from our servers, and the fit history, photos, and color palette stored on your phone. Deleting the app removes what is stored on your phone, but does not delete your account from our servers.
+
+## Your choices and rights
+
+You can delete your account in Settings, and you can manage camera and photo permissions in your device settings at any time.
+
+Because we are based in the EU, the GDPR applies: you have the right to access, correct, delete, or export your data, to object to or restrict certain processing, and to withdraw consent. You also have the right to lodge a complaint with your local data protection authority (in Slovenia, the Information Commissioner / Informacijski pooblaščenec). To make a request, email us at **ziga@benxlabs.com**.
+
+## Children
+
+Sharp is not intended for children under 13, and we do not knowingly collect their data. If you believe a child has used the app, contact us and we will remove it.
+
+## Security
+
+We use industry-standard measures such as encryption in transit and access controls to protect your data. No system is perfectly secure, but we work to keep your information safe.
+
+## Changes to this policy
+
+We may update this policy. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app.
+
+## Contact
+
+Questions or requests: **ziga@benxlabs.com**.
+`
+
+export const SHARP_TERMS = `# Terms of Use
+
+_Last updated October 6, 2026_
+
+These Terms are the agreement between you and **BENXLABS, Žiga Benko s.p.** for using Sharp. By using the app, you agree to them. We kept them as simple as we could.
+
+## Using the app
+
+We grant you a personal, non-transferable license to use Sharp on your devices for your own enjoyment. Please do not copy, resell, or reverse-engineer it.
+
+## Who can use it
+
+You must be at least 13 years old (or the age of digital consent where you live) to use Sharp. You are responsible for activity under your account.
+
+## Ratings are opinions, not facts
+
+Sharp's scores, potential scores, suggestions, and color palettes are generated automatically by AI. They are opinions about style — subjective, sometimes inaccurate, and not professional advice. A score is about the outfit in one photo, not about you as a person. Use them for fun and inspiration, at your own discretion.
+
+## Free checks and the one-time unlock
+
+- Sharp includes a limited number of free outfit checks. After that, you can buy a one-time unlock. It is **not a subscription** and never renews.
+- Payment is charged to your Apple ID or Google Play account when you confirm the purchase. The unlock is tied to that store account and can be restored on a new device from Settings.
+- Prices are shown in the app before you buy. Except where required by law, payments are non-refundable; refunds are handled by Apple or Google under their policies.
+- To keep the service fast and fair for everyone, ratings are subject to reasonable daily limits, including with the unlock.
+
+## Your photos
+
+You keep ownership of the photos you submit and the content you create ("Your Content"). You give us the limited permission needed to process Your Content — including sending your photos to our AI providers — to provide your ratings.
+
+Only submit photos of yourself, or of people who have agreed to it. You are responsible for what you submit, and you confirm you have the right to submit it.
+
+## Sharing
+
+You can share your fit check cards to other apps. You are responsible for what you post, and the terms of the app or platform you share to apply to it.
+
+## Acceptable use
+
+You agree not to use the app to submit or create content that is illegal, sexually explicit, violent or graphic, hateful, or harassing; not to submit photos of children or of other people without their consent; and not to attempt to misuse, overload, or circumvent the service, its free checks, or its limits.
+
+We may suspend or terminate access for accounts that break these rules.
+
+## Our intellectual property
+
+The app, its design, and its underlying technology belong to **BENXLABS, Žiga Benko s.p.** These Terms do not give you rights to our brand or software beyond using the app.
+
+## Termination
+
+You can stop using the app at any time and delete your account in Settings. We may suspend or end your access if you break these Terms or misuse the service.
+
+## Disclaimers
+
+The app is provided "as is" and "as available", without warranties of any kind. We do not guarantee it will always be available, error-free, or that ratings and suggestions will be accurate.
+
+## Limitation of liability
+
+To the fullest extent allowed by law, **BENXLABS, Žiga Benko s.p.** will not be liable for indirect or consequential damages arising from your use of the app. Where liability cannot be excluded, it is limited to the amount you paid us in the 12 months before the claim. Nothing in these Terms limits liability that cannot be limited under applicable law, including your mandatory rights as a consumer.
+
+## App stores
+
+You download the app through the Apple App Store or Google Play, and their terms also apply. Apple and Google are not responsible for the app or its content and are not parties to these Terms, except that Apple may enforce them as a third-party beneficiary.
+
+## Changes to these Terms
+
+We may update these Terms. If we make significant changes, we will update the date shown above and, where appropriate, notify you in the app. Continuing to use the app means you accept the updated Terms.
+
+## Governing law
+
+These Terms are governed by the laws of Slovenia, without regard to its conflict-of-laws rules, and the courts of Ljubljana, Slovenia have jurisdiction over any disputes. If you are a consumer, this does not deprive you of the protection of mandatory laws of your country of residence.
+
+## Contact
+
+Questions about these Terms: **ziga@benxlabs.com**.
+`
