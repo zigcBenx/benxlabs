@@ -439,12 +439,12 @@ SharpMaxx is operated by **BENXLABS, Žiga Benko s.p.** ("we", "us"), based in L
 - **Your ratings:** your score, potential score, feedback, and the occasion you picked are returned to your phone and stored **only on your device**, together with a copy of the photo, so you can see your recent fits.
 - **Color palette:** the AI suggests which colors suit you (your "color season") based on the skin tone, hair, and colors visible in your photo. The result is stored only on your device. We do not use it to identify you or for anything other than color suggestions.
 - **Usage counts:** for each rating, our server records your account ID, the time, and whether the rating succeeded. We use this to apply your free checks and a daily limit that prevents abuse. It contains no photos or results.
-- **Purchases:** if you buy the one-time unlock, Apple or Google handles the payment and our purchases provider tells us whether your account has the unlock. We never receive your card details.
+- **Subscriptions:** if you subscribe to SharpMaxx Pro, Apple or Google handles the payment and our subscriptions provider tells us whether your subscription is active. We never receive your card details.
 - **Usage analytics and crash reports:** we collect in-app events (for example, that a rating was completed or a share card was created), your device type and app version, and error reports. These are linked to a random device identifier, not to your name, and help us understand how the app is used and fix problems.
 
 ## How we use it
 
-To run the app — rating your outfits, generating your feedback and color palette, applying free checks and fair-use limits, unlocking your purchase, and fixing problems — to respond to support requests, and to decide what to improve. We do not use your data for advertising.
+To run the app — rating your outfits, generating your feedback and color palette, applying free checks and fair-use limits, managing your subscription, and fixing problems — to respond to support requests, and to decide what to improve. We do not use your data for advertising.
 
 ## AI rating
 
@@ -462,9 +462,9 @@ We do not sell your personal information or share it for advertising. We share i
 
 - **Supabase** — hosts our accounts, database, and the server function that handles ratings.
 - **OpenRouter**, and the AI model provider it routes your request to (Anthropic) — process your outfit photo to generate your rating.
-- **RevenueCat** — tracks whether your account has the one-time unlock.
+- **RevenueCat** — tracks whether your subscription is active.
 - **PostHog** — usage analytics and crash reports.
-- **Apple and Google** — distribute the app and process payments.
+- **Apple and Google** — distribute the app and process subscription payments.
 
 We may also disclose information if required by law, or to protect the rights, safety, and security of our users and the service.
 
@@ -529,12 +529,14 @@ You must be at least 13 years old (or the age of digital consent where you live)
 
 SharpMaxx's scores, potential scores, suggestions, and color palettes are generated automatically by AI. They are opinions about style — subjective, sometimes inaccurate, and not professional advice. A score is about the outfit in one photo, not about you as a person. Use them for fun and inspiration, at your own discretion.
 
-## Free checks and the one-time unlock
+## Free checks and SharpMaxx Pro
 
-- SharpMaxx includes a limited number of free outfit checks. After that, you can buy a one-time unlock. It is **not a subscription** and never renews.
-- Payment is charged to your Apple ID or Google Play account when you confirm the purchase. The unlock is tied to that store account and can be restored on a new device from Settings.
+- SharpMaxx includes a limited number of free outfit checks. **SharpMaxx Pro** is an auto-renewing subscription (weekly or yearly) that unlocks every swap and unlimited checks. Some plans include a free trial.
+- Payment is charged to your Apple ID or Google Play account when you confirm the purchase — or, if you start a free trial, when the trial ends.
+- **Your subscription renews automatically** at the same price for the same period unless you cancel at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the end of the current period.
+- You can manage or cancel your subscription at any time in your Apple ID or Google Play account settings. Cancelling stops future renewals; you keep access until the end of the period you've paid for. Deleting the app or your SharpMaxx account does not cancel a subscription. Any unused part of a free trial ends when you subscribe.
 - Prices are shown in the app before you buy. Except where required by law, payments are non-refundable; refunds are handled by Apple or Google under their policies.
-- To keep the service fast and fair for everyone, ratings are subject to reasonable daily limits, including with the unlock.
+- To keep the service fast and fair for everyone, ratings are subject to reasonable daily limits, including with SharpMaxx Pro.
 
 ## Your photos
 
